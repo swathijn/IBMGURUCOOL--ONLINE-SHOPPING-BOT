@@ -1,0 +1,2589 @@
+{
+  "intents": [
+    {
+      "intent": "cleaningitems",
+      "examples": [
+        {
+          "text": "floor cleaning"
+        },
+        {
+          "text": "house cleaning items"
+        },
+        {
+          "text": "List of cleaning items available"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Dairyproducts",
+      "examples": [
+        {
+          "text": "can you show the dairy products available"
+        },
+        {
+          "text": "Give a list of dairy products"
+        },
+        {
+          "text": "What dairy products are available"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Drinks",
+      "examples": [
+        {
+          "text": "Can i have some drinks"
+        },
+        {
+          "text": "can you give list of juice"
+        },
+        {
+          "text": "can you list the soft drinks available"
+        },
+        {
+          "text": "Can you show list of juices"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Enquiry",
+      "examples": [
+        {
+          "text": "Can i have a list of house cleaning items availble?"
+        },
+        {
+          "text": "Is dairy products availble?"
+        },
+        {
+          "text": "I want to enquire few items"
+        },
+        {
+          "text": "I want to see the catalog of items"
+        },
+        {
+          "text": "I wish to see the menu of items available"
+        },
+        {
+          "text": "What drinks are available?"
+        },
+        {
+          "text": "What snacks are available?"
+        }
+      ],
+      "description": "This intent helps to provide the list of items in the shop as per the users request."
+    },
+    {
+      "intent": "Greetings",
+      "examples": [
+        {
+          "text": "Good Afternoon"
+        },
+        {
+          "text": "Good Evening"
+        },
+        {
+          "text": "Good Morning"
+        },
+        {
+          "text": "Hello"
+        },
+        {
+          "text": "Hi"
+        }
+      ],
+      "description": "This intent gives a welcome message to the customer"
+    },
+    {
+      "intent": "order",
+      "examples": [
+        {
+          "text": "I want to give an order"
+        },
+        {
+          "text": "I wish to buy few items"
+        },
+        {
+          "text": "I wish to place an order"
+        },
+        {
+          "text": "I wish to purchase some items"
+        },
+        {
+          "text": "place an order"
+        },
+        {
+          "text": "Take order"
+        }
+      ],
+      "description": "Takes the order"
+    },
+    {
+      "intent": "snacks",
+      "examples": [
+        {
+          "text": "evening snacks"
+        },
+        {
+          "text": "list of snacks available"
+        },
+        {
+          "text": "snacks"
+        },
+        {
+          "text": "what snacks are special today"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "address",
+      "values": [
+        {
+          "type": "patterns",
+          "value": "street",
+          "patterns": [
+            "\\d+[ ](?:[A-Za-z0-9.-]+[ ]?)+(?:Avenue|Lane|Road|Boulevard|Drive|Street|Ave|Dr|Rd|Blvd|Ln|St)\\.? "
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "biscuits",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "goodday",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "salt",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "chocloates",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "5star",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "dairy milk",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "cleaningitems",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "floor cleaner",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "hand wash",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "sanitizer",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Dairyproducts",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Butter",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Cheese",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Curd",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Ghee",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Milk",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "drinks",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Juice",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Milkshake",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Soft drink",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "email",
+      "values": [
+        {
+          "type": "patterns",
+          "value": "email",
+          "patterns": [
+            "[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,}$"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Enquiry",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "catalog",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "cleaning items",
+          "synonyms": [
+            "cleaner",
+            "germs free cleaners",
+            "sanitizers",
+            "stain remover"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Dairy products",
+          "synonyms": [
+            "dairy",
+            "dairy items",
+            "milk items",
+            "milk products"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Drinks",
+          "synonyms": [
+            "cool drinks",
+            "juice",
+            "milk shakes",
+            "soft drinks"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "enquire",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "items",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "menu",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "snacks",
+          "synonyms": [
+            "instant snacks",
+            "pastries"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Greetings",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Good Afternoon",
+          "synonyms": [
+            "ga",
+            "good noon",
+            "gud afnoon",
+            "Gud afternoon"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Good Evening",
+          "synonyms": [
+            "ge",
+            "gud eve",
+            "gud evening"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Good Morning",
+          "synonyms": [
+            "gm",
+            "Gud Morning",
+            "Gud mrng"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "hello",
+          "synonyms": [
+            "hello",
+            "hey",
+            "yeah"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "hi",
+          "synonyms": [
+            "hey",
+            "hi",
+            "yeah"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "icecreams",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "butter scotch",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "choconut",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "items",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "5star",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Biscuits",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Black Forest",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Butter",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "butter and salt",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Butter scotch",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "caramel",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Cheese",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Chocolates",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "choconut",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "cococola",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Curd",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "DAIRY MILK",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "dates",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "floor cleaner",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Ghee",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "goodday",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Gulab Jamun",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "hand wash",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Icecreams",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Juice",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Lichi",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Milk",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Milkshake",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Orange",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Pastries",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "pepsi",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Pomegranete",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Pop corn",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Rainbow",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "salt",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "sanitizer",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Sapota",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Soft drink",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "sprite",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "strawberry",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Sweet",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "vanilla",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "juice",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Orange",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Pomegranete",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Sapota",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "milkshake",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Dates",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Lichi",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "strawberry",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "order",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "order",
+          "synonyms": [
+            "buy",
+            "give",
+            "place",
+            "purchase",
+            "take"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "pastries",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Black Forest",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Butter scotch",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Rainbow",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "payment",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "card",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "COD",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "UPI",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "popcorn",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Butter and Salt",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Caramel",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "snacks",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Biscuits",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Chocolates",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Icecreams",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Pastries",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Pop corn",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Sweet",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "softdrink",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "cococola",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "pepsi",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "sprite",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-number",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "thankyou",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "thanks",
+          "synonyms": [
+            "thanks a lot",
+            "thank you"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Anything else",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I didn't understand. You can try rephrasing."
+              },
+              {
+                "text": "Can you reword your statement? I'm not understanding."
+              },
+              {
+                "text": "I didn't get your meaning."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Anything else",
+      "previous_sibling": "node_4_1602479947222",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "How many $items you want?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_5_1603017379768",
+      "event_name": "focus",
+      "dialog_node": "handler_10_1603017379777",
+      "previous_sibling": "handler_5_1603017379777"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_2_1602960758254",
+      "event_name": "focus",
+      "dialog_node": "handler_1_1603017146863",
+      "previous_sibling": "node_8_1603019074259"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_5_1603017379768",
+      "context": {
+        "number": "@sys-number"
+      },
+      "conditions": "@sys-number",
+      "event_name": "input",
+      "dialog_node": "handler_5_1603017379777"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_1_1603024285113",
+      "context": {
+        "items": "@items"
+      },
+      "conditions": "@items",
+      "event_name": "input",
+      "dialog_node": "handler_5_1603024285121"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Which item you prefer to buy"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_1_1603024285113",
+      "event_name": "focus",
+      "dialog_node": "handler_6_1603024285122",
+      "previous_sibling": "handler_5_1603024285121"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "We accept COD, card, UPI. What is the mode of payment?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_5_1603016836868",
+      "event_name": "focus",
+      "dialog_node": "handler_7_1603016836878",
+      "previous_sibling": "handler_9_1603016836878"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_5_1603016836868",
+      "context": {
+        "payment": "@payment"
+      },
+      "conditions": "@payment",
+      "event_name": "input",
+      "dialog_node": "handler_9_1603016836878"
+    },
+    {
+      "type": "standard",
+      "title": "pastries",
+      "parent": "node_5_1602941775470",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@pastries",
+      "dialog_node": "node_10_1602963178467"
+    },
+    {
+      "type": "standard",
+      "title": "biscuits",
+      "parent": "node_5_1602941775470",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@biscuits",
+      "dialog_node": "node_10_1603105511523",
+      "previous_sibling": "node_1_1603105215111"
+    },
+    {
+      "type": "standard",
+      "title": "popcorn",
+      "parent": "node_5_1602941775470",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@popcorn",
+      "dialog_node": "node_1_1603105215111",
+      "previous_sibling": "node_10_1602963178467"
+    },
+    {
+      "type": "standard",
+      "title": "icecream",
+      "parent": "node_5_1602941775470",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@icecreams",
+      "dialog_node": "node_1_1603105777621",
+      "previous_sibling": "node_10_1603105511523"
+    },
+    {
+      "type": "standard",
+      "title": "drinks",
+      "parent": "node_4_1602479947222",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@drinks",
+      "dialog_node": "node_2_1602944263220",
+      "previous_sibling": "node_5_1602941775470"
+    },
+    {
+      "type": "frame",
+      "title": "order",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Thank you, Your order for $number $items is successful. Please pay using $payment . Your receipt is sent to $email  "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "next_step": {
+        "behavior": "skip_user_input"
+      },
+      "conditions": "#order || @order:order",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_2_1602960758254",
+      "digress_out": "allow_all",
+      "previous_sibling": "node_2_1603647329884",
+      "digress_out_slots": "allow_returning"
+    },
+    {
+      "type": "standard",
+      "title": "thanks",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Thank you. Keep shopping."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "@thankyou",
+      "dialog_node": "node_2_1603647329884",
+      "previous_sibling": "Welcome"
+    },
+    {
+      "type": "standard",
+      "title": "dairies",
+      "parent": "node_4_1602479947222",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@Dairyproducts",
+      "dialog_node": "node_3_1602488742547"
+    },
+    {
+      "type": "standard",
+      "title": "chocolates",
+      "parent": "node_5_1602941775470",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@chocloates",
+      "dialog_node": "node_3_1603105986818",
+      "previous_sibling": "node_1_1603105777621"
+    },
+    {
+      "type": "standard",
+      "title": "Enquiry",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#Enquiry || @Enquiry",
+      "digress_in": "returns",
+      "dialog_node": "node_4_1602479947222",
+      "digress_out": "allow_all_never_return",
+      "previous_sibling": "node_6_1602315756343"
+    },
+    {
+      "type": "standard",
+      "title": "email",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Thank you for giving your mail ID. Your mail ID $email is used for further references"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "Welcome",
+      "context": {
+        "email": "@email.literal"
+      },
+      "conditions": "@email",
+      "dialog_node": "node_4_1603103993778"
+    },
+    {
+      "type": "standard",
+      "title": "juice",
+      "parent": "node_2_1602944263220",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@juice",
+      "dialog_node": "node_4_1603106559232",
+      "previous_sibling": "node_5_1603106164858"
+    },
+    {
+      "type": "standard",
+      "title": "softdrink",
+      "parent": "node_2_1602944263220",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@softdrink",
+      "dialog_node": "node_4_1603106793348",
+      "previous_sibling": "node_4_1603106559232"
+    },
+    {
+      "type": "standard",
+      "title": "snacks",
+      "parent": "node_4_1602479947222",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@snacks",
+      "dialog_node": "node_5_1602941775470",
+      "previous_sibling": "node_3_1602488742547"
+    },
+    {
+      "type": "standard",
+      "title": "milkshake",
+      "parent": "node_2_1602944263220",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@milkshake",
+      "dialog_node": "node_5_1603106164858"
+    },
+    {
+      "type": "standard",
+      "title": "Greetings",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#Greetings || @Greetings",
+      "dialog_node": "node_6_1602315756343",
+      "previous_sibling": "node_2_1602960758254"
+    },
+    {
+      "type": "standard",
+      "title": "cleaningitems",
+      "parent": "node_4_1602479947222",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@cleaningitems",
+      "dialog_node": "node_6_1602958940245",
+      "previous_sibling": "node_2_1602944263220"
+    },
+    {
+      "type": "standard",
+      "title": "Deleting Context",
+      "output": {
+        "deleted": "<?context.remove('items')?><?context.remove('number')?><?context.remove('payment')?><?context.remove('email')?>",
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1602960758254",
+      "conditions": "true",
+      "dialog_node": "node_8_1603019074259"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Cococola",
+            "source": "https://images-na.ssl-images-amazon.com/images/I/51g2RzSyHcL._SX569_.jpg",
+            "description": "Rs.90/-",
+            "response_type": "image"
+          }
+        ]
+      },
+      "parent": "node_4_1603106793348",
+      "conditions": "@softdrink:cococola",
+      "dialog_node": "response_10_1603106891488",
+      "previous_sibling": "response_7_1603106857853"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Gulab jamun",
+            "source": "https://content3.jdmagicbox.com/comp/def_content/sweet_shops/default-sweet-shops-6.jpg?clr=525c0a",
+            "description": "Rs. 200 /kg",
+            "response_type": "image"
+          },
+          {
+            "values": [
+              {
+                "text": "If you want to see  other snacks available , type snacks"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1602941775470",
+      "conditions": "@snacks:Sweet",
+      "dialog_node": "response_1_1602942161471",
+      "previous_sibling": "response_7_1602942109787"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Fresh Juice",
+            "options": [
+              {
+                "label": "Orange",
+                "value": {
+                  "input": {
+                    "text": "Orange"
+                  }
+                }
+              },
+              {
+                "label": "Sapota",
+                "value": {
+                  "input": {
+                    "text": "Sapota"
+                  }
+                }
+              },
+              {
+                "label": "Pomegranete",
+                "value": {
+                  "input": {
+                    "text": "Pomogranete"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          },
+          {
+            "values": [
+              {
+                "text": "If you want to see other drinks available , type drinks"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1602944263220",
+      "conditions": "@drinks:Juice",
+      "dialog_node": "response_1_1602944368903",
+      "previous_sibling": "response_5_1602944282595"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Milky Mist Cheese ",
+            "source": "https://5.imimg.com/data5/WH/PQ/MY-18685588/mozzarella-cheese-500x500.jpg",
+            "description": "Rs.100/-",
+            "response_type": "image"
+          },
+          {
+            "values": [
+              {
+                "text": "If you want to see few more dairy items available , type dairy items"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1602488742547",
+      "conditions": "@Dairyproducts:Cheese",
+      "dialog_node": "response_2_1602488815212",
+      "previous_sibling": "response_3_1602488842965"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Caramel",
+            "source": "https://2blissofbaking.com/wp-content/uploads/2020/01/DSC_1564-1-1.jpg",
+            "description": "Rs. 100/-",
+            "response_type": "image"
+          }
+        ]
+      },
+      "parent": "node_1_1603105215111",
+      "conditions": "@popcorn:Caramel",
+      "dialog_node": "response_2_1603105267785"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Butter and Salt",
+            "source": "https://5.imimg.com/data5/NE/IE/MY-1942266/butter-and-salt-popcorn-500x500.jpg",
+            "description": "Rs. 50/-",
+            "response_type": "image"
+          }
+        ]
+      },
+      "parent": "node_1_1603105215111",
+      "conditions": "@popcorn:(Butter and Salt)",
+      "dialog_node": "response_2_1603105325750",
+      "previous_sibling": "response_2_1603105267785"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Butter Scotch",
+            "source": "https://www.ticklingpalates.com/wp-content/uploads/2015/06/Eggless-Butterscotch-Ice-cream-recipe-1-480x270.jpg",
+            "description": "Rs. 100/-",
+            "response_type": "image"
+          }
+        ]
+      },
+      "parent": "node_1_1603105777621",
+      "conditions": "@icecreams:(butter scotch)",
+      "dialog_node": "response_2_1603105912292",
+      "previous_sibling": "response_6_1603105811438"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Cavins Milk",
+            "source": "https://www.vhv.rs/dpng/d/9-98222_milk-packet-hd-png-download.png",
+            "description": "Rs. 30/-",
+            "response_type": "image"
+          },
+          {
+            "values": [
+              {
+                "text": "If you want to see few more dairy items available , type dairy items"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1602488742547",
+      "conditions": "@Dairyproducts:Milk",
+      "dialog_node": "response_3_1602488842965"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Dettol handwash",
+            "source": "https://images-na.ssl-images-amazon.com/images/I/61VdTZiUs2L._SL1000_.jpg",
+            "description": "Rs. 50/-",
+            "response_type": "image"
+          },
+          {
+            "values": [
+              {
+                "text": "If you want to see other cleaning items available , type cleaning items"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1602958940245",
+      "conditions": "@cleaningitems:(hand wash)",
+      "dialog_node": "response_3_1602959109570",
+      "previous_sibling": "response_5_1602958968998"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Pledge Cleaner",
+            "source": "https://images-na.ssl-images-amazon.com/images/I/61HrcfTy2hL._SL1500_.jpg",
+            "description": "Rs. 80/-",
+            "response_type": "image"
+          },
+          {
+            "values": [
+              {
+                "text": "If you want to see other cleaning items available , type cleaning items"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1602958940245",
+      "conditions": "@cleaningitems:(floor cleaner)",
+      "dialog_node": "response_3_1602959219470",
+      "previous_sibling": "response_3_1602959109570"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Dates milkshake",
+            "source": "https://www.culturedfoodlife.com/wp-content/uploads/2015/10/IMG_4749.jpg",
+            "description": "Rs. 100/-",
+            "response_type": "image"
+          }
+        ]
+      },
+      "parent": "node_5_1603106164858",
+      "conditions": "@milkshake:Dates",
+      "dialog_node": "response_3_1603106233181"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "We have snacks, dairy products, drinks, house cleaning items. How can I help you?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1602479947222",
+      "conditions": "@Enquiry:menu",
+      "dialog_node": "response_3_1603637207113",
+      "previous_sibling": "response_5_1603635127991"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hello!!!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1602315756343",
+      "conditions": "@Greetings:(hello)",
+      "dialog_node": "response_4_1602316644849",
+      "previous_sibling": "response_6_1602316619493"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Good Morning!!!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1602315756343",
+      "conditions": "@Greetings:(Good Morning)",
+      "dialog_node": "response_4_1602316657827",
+      "previous_sibling": "response_4_1602316644849"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Amorearth Ghee",
+            "source": "https://images-na.ssl-images-amazon.com/images/I/71oIoWxfY7L._SL1500_.jpg",
+            "description": "Rs. 250/-",
+            "response_type": "image"
+          },
+          {
+            "values": [
+              {
+                "text": "If you want to see few more dairy items available , type dairy items"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1602488742547",
+      "conditions": "@Dairyproducts:Ghee",
+      "dialog_node": "response_4_1602489284048",
+      "previous_sibling": "response_7_1602489266836"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Popcorn",
+            "options": [
+              {
+                "label": "Caramel",
+                "value": {
+                  "input": {
+                    "text": "Caramel"
+                  }
+                }
+              },
+              {
+                "label": "Butter and Salt",
+                "value": {
+                  "input": {
+                    "text": "Butter and Salt"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          },
+          {
+            "values": [
+              {
+                "text": "If you want to see  other snacks available , type snacks"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1602941775470",
+      "conditions": "@snacks:(Pop corn)",
+      "dialog_node": "response_4_1602942903945",
+      "previous_sibling": "response_1_1602942161471"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Rainbow",
+            "source": "https://www.lifeloveandsugar.com/wp-content/uploads/2019/03/Rainbow-Swirl-Cake5.jpg",
+            "description": "Rs.150/-",
+            "response_type": "image"
+          }
+        ]
+      },
+      "parent": "node_10_1602963178467",
+      "conditions": "@pastries:Rainbow",
+      "dialog_node": "response_4_1603105412264",
+      "previous_sibling": "response_5_1602963356525"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "5 Star",
+            "source": "https://5.imimg.com/data5/JG/BX/MY-37637437/5-star-500x500.png",
+            "description": "Rs. 30/-",
+            "response_type": "image"
+          }
+        ]
+      },
+      "parent": "node_3_1603105986818",
+      "conditions": "@chocloates:5star",
+      "dialog_node": "response_4_1603106051549",
+      "previous_sibling": "response_8_1603106002696"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "snacks ",
+            "options": [
+              {
+                "label": "Chocolates",
+                "value": {
+                  "input": {
+                    "text": "Chocolates"
+                  }
+                }
+              },
+              {
+                "label": "Biscuits",
+                "value": {
+                  "input": {
+                    "text": "Biscuits"
+                  }
+                }
+              },
+              {
+                "label": "Icecreams",
+                "value": {
+                  "input": {
+                    "text": "Icecreams"
+                  }
+                }
+              },
+              {
+                "label": "Sweet",
+                "value": {
+                  "input": {
+                    "text": "Sweet"
+                  }
+                }
+              },
+              {
+                "label": "Popcorn",
+                "value": {
+                  "input": {
+                    "text": "Popcorn"
+                  }
+                }
+              },
+              {
+                "label": "Pastries",
+                "value": {
+                  "input": {
+                    "text": "Pastries"
+                  }
+                }
+              }
+            ],
+            "description": "",
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_4_1602479947222",
+      "conditions": "@Enquiry:snacks",
+      "dialog_node": "response_5_1602480044011",
+      "previous_sibling": "node_6_1602958940245"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Milkshake",
+            "options": [
+              {
+                "label": "Lichi",
+                "value": {
+                  "input": {
+                    "text": "Lichi"
+                  }
+                }
+              },
+              {
+                "label": "Dates",
+                "value": {
+                  "input": {
+                    "text": "Dates"
+                  }
+                }
+              },
+              {
+                "label": "strawberry",
+                "value": {
+                  "input": {
+                    "text": "strawberry"
+                  }
+                }
+              }
+            ],
+            "description": "",
+            "response_type": "option"
+          },
+          {
+            "values": [
+              {
+                "text": "If you want to see other drinks available , type drinks"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1602944263220",
+      "conditions": "@drinks:Milkshake",
+      "dialog_node": "response_5_1602944282595",
+      "previous_sibling": "node_4_1603106793348"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "softdrink",
+            "options": [
+              {
+                "label": "cocacola",
+                "value": {
+                  "input": {
+                    "text": "cococola"
+                  }
+                }
+              },
+              {
+                "label": "pepsi",
+                "value": {
+                  "input": {
+                    "text": "pepsi"
+                  }
+                }
+              },
+              {
+                "label": "sprite",
+                "value": {
+                  "input": {
+                    "text": "sprite"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          },
+          {
+            "values": [
+              {
+                "text": "If you want to see other drinks available , type drinks"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1602944263220",
+      "conditions": "@drinks:(Soft drink)",
+      "dialog_node": "response_5_1602944454733",
+      "previous_sibling": "response_1_1602944368903"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "drinks",
+            "options": [
+              {
+                "label": "Milkshake",
+                "value": {
+                  "input": {
+                    "text": "Milkshake"
+                  }
+                }
+              },
+              {
+                "label": "Juice",
+                "value": {
+                  "input": {
+                    "text": "Juice"
+                  }
+                }
+              },
+              {
+                "label": "Soft drinks",
+                "value": {
+                  "input": {
+                    "text": "Soft drinks"
+                  }
+                }
+              }
+            ],
+            "description": "",
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_4_1602479947222",
+      "conditions": "@Enquiry:Drinks",
+      "dialog_node": "response_5_1602944598142",
+      "previous_sibling": "response_8_1602480770532"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Oriley Sanitizer",
+            "source": "https://images-na.ssl-images-amazon.com/images/I/61VGb3rox%2BL._SL1500_.jpg",
+            "description": "Rs.60/-",
+            "response_type": "image"
+          },
+          {
+            "values": [
+              {
+                "text": "If you want to see other cleaning items available , type cleaning items"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1602958940245",
+      "conditions": "@cleaningitems:sanitizer",
+      "dialog_node": "response_5_1602958968998"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Black Forest",
+            "source": "https://www.warmoven.in/media/catalog/product/cache/4e14bcb566d25893ae7201d4dbdc22fd/image/638e0/blackforest-cake.jpeg",
+            "description": "Rs.60/-",
+            "response_type": "image"
+          }
+        ]
+      },
+      "parent": "node_10_1602963178467",
+      "conditions": "@pastries:(Black Forest)",
+      "dialog_node": "response_5_1602963356525"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Salt biscuit",
+            "source": "https://i.ytimg.com/vi/aU4U0M8JZG8/maxresdefault.jpg",
+            "description": "Rs. 25/-",
+            "response_type": "image"
+          }
+        ]
+      },
+      "parent": "node_10_1603105511523",
+      "conditions": "@biscuits:salt",
+      "dialog_node": "response_5_1603105685538",
+      "previous_sibling": "response_6_1603105574065"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Pomogranete",
+            "source": "https://ministryofcurry.com/wp-content/uploads/2019/11/pomegranate-juice-1-850x1275.jpg",
+            "description": "Rs. 60/-",
+            "response_type": "image"
+          }
+        ]
+      },
+      "parent": "node_4_1603106559232",
+      "conditions": "@juice:Pomegranete",
+      "dialog_node": "response_5_1603106573360"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Orange ",
+            "source": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/is-orange-juice-healthy-1578411142.jpg",
+            "description": "Rs 50/-",
+            "response_type": "image"
+          }
+        ]
+      },
+      "parent": "node_4_1603106559232",
+      "conditions": "@juice:Orange",
+      "dialog_node": "response_5_1603106660935",
+      "previous_sibling": "response_7_1603106626193"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "We have snacks, dairy products, drinks, house cleaning items. How can I help you?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1602479947222",
+      "conditions": "@Enquiry:enquire",
+      "dialog_node": "response_5_1603635127991",
+      "previous_sibling": "response_8_1603635109443"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hi!!!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1602315756343",
+      "conditions": "@Greetings:hi",
+      "dialog_node": "response_6_1602316619493"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Good Afternoon!!!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1602315756343",
+      "conditions": "@Greetings:(Good Afternoon)",
+      "dialog_node": "response_6_1602316685422",
+      "previous_sibling": "response_4_1602316657827"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Clening items",
+            "options": [
+              {
+                "label": "Floor cleaner",
+                "value": {
+                  "input": {
+                    "text": "Floor cleaner"
+                  }
+                }
+              },
+              {
+                "label": "Hand wash",
+                "value": {
+                  "input": {
+                    "text": "Hand wash"
+                  }
+                }
+              },
+              {
+                "label": "Sanitizer",
+                "value": {
+                  "input": {
+                    "text": "Sanitizer"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_4_1602479947222",
+      "conditions": "@Enquiry:(cleaning items)",
+      "dialog_node": "response_6_1602480578965",
+      "previous_sibling": "response_7_1602480370725"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Good day",
+            "source": "https://images-na.ssl-images-amazon.com/images/I/81xdMLXATDL._SL1500_.jpg",
+            "description": "Rs. 20/-",
+            "response_type": "image"
+          }
+        ]
+      },
+      "parent": "node_10_1603105511523",
+      "conditions": "@biscuits:goodday",
+      "dialog_node": "response_6_1603105574065"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Choco nut",
+            "source": "https://5.imimg.com/data5/SE/DW/MY-48516595/fruit-n-nut-chocobar-ice-cream-500x500.png",
+            "description": "Rs. 150/-",
+            "response_type": "image"
+          }
+        ]
+      },
+      "parent": "node_1_1603105777621",
+      "conditions": "@icecreams:choconut",
+      "dialog_node": "response_6_1603105811438"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Pepsi",
+            "source": "https://www.pepsi.com/en-us/uploads/images/nfl2020_cans.png",
+            "description": "Rs.70/-",
+            "response_type": "image"
+          }
+        ]
+      },
+      "parent": "node_4_1603106793348",
+      "conditions": "@softdrink:pepsi",
+      "dialog_node": "response_6_1603106816435"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hi!!!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1602315756343",
+      "conditions": "anything_else",
+      "dialog_node": "response_7_1602316938426",
+      "previous_sibling": "response_9_1602316703013"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Dairy products",
+            "options": [
+              {
+                "label": "Milk",
+                "value": {
+                  "input": {
+                    "text": "Milk"
+                  }
+                }
+              },
+              {
+                "label": "Cheese",
+                "value": {
+                  "input": {
+                    "text": "Cheese"
+                  }
+                }
+              },
+              {
+                "label": "Butter",
+                "value": {
+                  "input": {
+                    "text": "Butter"
+                  }
+                }
+              },
+              {
+                "label": "Curd",
+                "value": {
+                  "input": {
+                    "text": "Curd"
+                  }
+                }
+              },
+              {
+                "label": "Ghee",
+                "value": {
+                  "input": {
+                    "text": "Ghee"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_4_1602479947222",
+      "conditions": "@Enquiry:(Dairy products)",
+      "dialog_node": "response_7_1602480370725",
+      "previous_sibling": "response_5_1602480044011"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Heritage Curd",
+            "source": "https://images-na.ssl-images-amazon.com/images/I/61AvbLjXWbL._SL1417_.jpg",
+            "description": "Rs. 20/-",
+            "response_type": "image"
+          },
+          {
+            "values": [
+              {
+                "text": "If you want to see few more dairy items available , type dairy items"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1602488742547",
+      "conditions": "@Dairyproducts:Curd",
+      "dialog_node": "response_7_1602489266836",
+      "previous_sibling": "response_9_1602489249754"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "",
+            "options": [
+              {
+                "label": "Choconut",
+                "value": {
+                  "input": {
+                    "text": "Choconut"
+                  }
+                }
+              },
+              {
+                "label": "butter scotch",
+                "value": {
+                  "input": {
+                    "text": "butter scotch"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          },
+          {
+            "values": [
+              {
+                "text": "If you want to see  other snacks available , type snacks"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1602941775470",
+      "conditions": "@snacks:Icecreams",
+      "dialog_node": "response_7_1602942109787",
+      "previous_sibling": "response_9_1602942049519"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Strawberry milkshake",
+            "source": "https://www.chelseasmessyapron.com/wp-content/uploads/2020/04/Strawberry-Milkshake-1.jpg",
+            "description": "Rs. 90/-",
+            "response_type": "image"
+          }
+        ]
+      },
+      "parent": "node_5_1603106164858",
+      "conditions": "@milkshake:strawberry",
+      "dialog_node": "response_7_1603106291849",
+      "previous_sibling": "response_3_1603106233181"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Sapota",
+            "source": "https://www.netmeds.com/images/cms/wysiwyg/blog/2019/08/benefits_chickoo_big_898.jpg",
+            "description": "Rs. 60/-",
+            "response_type": "image"
+          }
+        ]
+      },
+      "parent": "node_4_1603106559232",
+      "conditions": "@juice:Sapota",
+      "dialog_node": "response_7_1603106626193",
+      "previous_sibling": "response_5_1603106573360"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Sprite",
+            "source": "https://images-na.ssl-images-amazon.com/images/I/51AniJpRujL._SX425_.jpg",
+            "description": "Rs. 70/-",
+            "response_type": "image"
+          }
+        ]
+      },
+      "parent": "node_4_1603106793348",
+      "conditions": "@softdrink:sprite",
+      "dialog_node": "response_7_1603106857853",
+      "previous_sibling": "response_6_1603106816435"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "We have snacks, dairy products, drinks, house cleaning items. How can I help you?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1602479947222",
+      "conditions": "@Enquiry:items",
+      "dialog_node": "response_8_1602480770532",
+      "previous_sibling": "response_6_1602480578965"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Pastries",
+            "options": [
+              {
+                "label": "Black Forest",
+                "value": {
+                  "input": {
+                    "text": "Black Forest"
+                  }
+                }
+              },
+              {
+                "label": "Vanilla",
+                "value": {
+                  "input": {
+                    "text": "Vanilla"
+                  }
+                }
+              },
+              {
+                "label": "Rainbow",
+                "value": {
+                  "input": {
+                    "text": "Rainbow"
+                  }
+                }
+              }
+            ],
+            "description": "",
+            "response_type": "option"
+          },
+          {
+            "values": [
+              {
+                "text": "If you want to know the cost  of the pastry , click on the pastry"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1602941775470",
+      "conditions": "@snacks:Pastries",
+      "dialog_node": "response_8_1602942962310",
+      "previous_sibling": "response_4_1602942903945"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Dairy Milk",
+            "source": "https://5.imimg.com/data5/ES/FV/WY/SELLER-93160461/cadbury-dairy-milk-chocolate-500x500.jpg",
+            "description": "Rs. 60/-",
+            "response_type": "image"
+          }
+        ]
+      },
+      "parent": "node_3_1603105986818",
+      "conditions": "@chocloates:(dairy milk)",
+      "dialog_node": "response_8_1603106002696"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "We have snacks, dairy products, drinks, house cleaning items. How can I help you?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1602479947222",
+      "conditions": "@Enquiry:catalog",
+      "dialog_node": "response_8_1603635109443",
+      "previous_sibling": "response_5_1602944598142"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Good Evening!!!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1602315756343",
+      "conditions": "@Greetings:(Good Evening)",
+      "dialog_node": "response_9_1602316703013",
+      "previous_sibling": "response_6_1602316685422"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Alpine Butter",
+            "source": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR5XBI4AogH3pgbFoeoRw9IF5GEKyPbRFiWzQ&usqp=CAU",
+            "description": "Rs. 200/-",
+            "response_type": "image"
+          },
+          {
+            "values": [
+              {
+                "text": "If you want to see few more dairy items available , type dairy items"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1602488742547",
+      "conditions": "@Dairyproducts:Butter",
+      "dialog_node": "response_9_1602489249754",
+      "previous_sibling": "response_2_1602488815212"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Chocolates",
+            "options": [
+              {
+                "label": "Dairy Milk",
+                "value": {
+                  "input": {
+                    "text": "Dairy Milk"
+                  }
+                }
+              },
+              {
+                "label": "5 star",
+                "value": {
+                  "input": {
+                    "text": ""
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          },
+          {
+            "values": [
+              {
+                "text": "If you want to see  other snacks available , type snacks"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1602941775470",
+      "conditions": "@snacks:Chocolates",
+      "dialog_node": "response_9_1602941806218",
+      "previous_sibling": "node_3_1603105986818"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Biscuits",
+            "options": [
+              {
+                "label": "Goodday",
+                "value": {
+                  "input": {
+                    "text": "Goodday"
+                  }
+                }
+              },
+              {
+                "label": "salt",
+                "value": {
+                  "input": {
+                    "text": "salt"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          },
+          {
+            "values": [
+              {
+                "text": "If you want to see  other snacks available , type snacks"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1602941775470",
+      "conditions": "@snacks:Biscuits",
+      "dialog_node": "response_9_1602942049519",
+      "previous_sibling": "response_9_1602941806218"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Butter scotch",
+            "source": "https://cdn.igp.com/f_auto,q_auto,t_prodm/products/p-classic-butterscotch-cake-1-kg--109216-m.jpg",
+            "description": "Rs.130/-",
+            "response_type": "image"
+          }
+        ]
+      },
+      "parent": "node_10_1602963178467",
+      "conditions": "@pastries:(Butter scotch)",
+      "dialog_node": "response_9_1603105462233",
+      "previous_sibling": "response_4_1603105412264"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "Lichi milkshake",
+            "source": "https://5.imimg.com/data5/NL/FV/SG/SELLER-88653404/lichi-juices-500x500.jpg",
+            "description": "Rs.90/-",
+            "response_type": "image"
+          }
+        ]
+      },
+      "parent": "node_5_1603106164858",
+      "conditions": "@milkshake:Lichi",
+      "dialog_node": "response_9_1603106342707",
+      "previous_sibling": "response_7_1603106291849"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_2_1602960758254",
+      "variable": "$items",
+      "dialog_node": "slot_1_1603024285113",
+      "previous_sibling": "handler_1_1603017146863"
+    },
+    {
+      "type": "slot",
+      "parent": "node_2_1602960758254",
+      "variable": "$payment",
+      "dialog_node": "slot_5_1603016836868",
+      "previous_sibling": "slot_5_1603017379768"
+    },
+    {
+      "type": "slot",
+      "parent": "node_2_1602960758254",
+      "variable": "$number",
+      "dialog_node": "slot_5_1603017379768",
+      "previous_sibling": "slot_1_1603024285113"
+    },
+    {
+      "type": "standard",
+      "title": "Welcome",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hello!!! Welcome to our online shopping store Bot!!!!!  How would I help you?  can you please give your name and mail ID                                              "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "Welcome"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "off_topic": {
+      "enabled": true
+    },
+    "disambiguation": {
+      "prompt": "Did you mean:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "None of the above"
+    },
+    "system_entities": {
+      "enabled": true
+    },
+    "human_agent_assist": {
+      "prompt": "Did you mean:"
+    },
+    "spelling_auto_correct": true
+  },
+  "learning_opt_out": false,
+  "name": "Online shopping store",
+  "language": "en",
+  "description": ""
+}
